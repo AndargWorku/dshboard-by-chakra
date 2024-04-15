@@ -231,7 +231,7 @@ const ProductList: React.FC = () => {
         px="4"
         py="2"
         mb="4"
-        _hover={{ m: '2' }}
+        // _hover={{ m: '2' }}
       >
         Add Product
       </Button>
@@ -260,7 +260,7 @@ const ProductList: React.FC = () => {
           py="1"
           rounded="md"
           mr="2"
-          _hover={{ m: '2' }}
+          // _hover={{ m: '2' }}
         >
           Previous
         </Button>
@@ -284,41 +284,14 @@ const ProductList: React.FC = () => {
           py="1"
           rounded="md"
           ml="2"
-          _hover={{ m: '2' }}
+          // _hover={{ m: '2' }}
         >
           Next
         </Button>
       </Flex>
     
 
-      {/* {deleteConfirmation && (
-  <Box
-    className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full bg-gray-800 bg-opacity-75 flex items-center justify-center"
-  >
-    <Box className="bg-white p-6 rounded-md w-96 shadow-lg">
-      <Text>{`Are you sure you want to delete product with ID: ${deleteConfirmation}?`}</Text>
-      <Button
-        onClick={() => {
-          const updatedProducts = products.filter(
-            (product) => product.id !== deleteConfirmation
-          );
-          setProducts(updatedProducts);
-          setDeleteConfirmation(null);
-        }}
-        className="yes px-4 py-2 rounded-md mr-2 bg-pink-500 hover:bg-red-700"
-        colorScheme='purple'
-      >
-        Yes
-      </Button>
-      <Button
-        onClick={() => setDeleteConfirmation(null)} colorScheme='pink'
-        className="cancel px-4 py-2 rounded-md hover:bg-gray-400 "
-      >
-        Cancel
-      </Button>
-    </Box>
-  </Box>
-)} */}
+      
 {deleteConfirmation && (
   <Modal isOpen={true} onClose={() => setDeleteConfirmation(null)}>
     <ModalOverlay />
