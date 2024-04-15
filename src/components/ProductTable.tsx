@@ -123,7 +123,7 @@ const ProductTable: React.FC<ProductTableProps> = ({
             type="text"
             value={filter.name}
             onChange={(e) => setFilter({ ...filter, name: e.target.value })}
-            border="2px"
+            border="1px"
             p={2}
             rounded="md"
           />
@@ -136,7 +136,7 @@ const ProductTable: React.FC<ProductTableProps> = ({
             type="text"
             value={filter.category}
             onChange={(e) => setFilter({ ...filter, category: e.target.value })}
-            border="2px"
+            border="1px"
             p={2}
             rounded="md"
           />
@@ -149,7 +149,7 @@ const ProductTable: React.FC<ProductTableProps> = ({
             type="text"
             value={filter.date}
             onChange={(e) => setFilter({ ...filter, date: e.target.value })}
-            border="2px"
+            border="1px"
             p={2}
             rounded="md"
           />
